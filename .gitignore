@@ -1,2 +1,9 @@
 *.mdf
-*.ldf 
+*.ldf
+*.config
+*.db
+*.db-shm
+*.db-wal
+*.opendb
+*.ipch
+*.VC.db
