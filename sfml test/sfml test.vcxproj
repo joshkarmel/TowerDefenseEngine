@@ -168,11 +168,13 @@
     <ClCompile Include="..\include\imgui\imgui_widgets.cpp" />
     <ClCompile Include="..\include\noise\noiseutils.cpp" />
     <ClCompile Include="Core\src\Main.cpp" />
+    <ClCompile Include="Core\src\StateController.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\include\noise\noiseutils.h" />
     <ClInclude Include="Core\Header\Auxillary.h" />
     <ClInclude Include="Core\Header\Main.h" />
+    <ClInclude Include="Core\Header\StateController.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
