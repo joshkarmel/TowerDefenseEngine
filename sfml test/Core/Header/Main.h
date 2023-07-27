@@ -1,11 +1,6 @@
 #pragma once
 
-#include "SFML/Graphics.hpp"
-#include "SFML/Main.hpp"
-#include "SFML/System.hpp"
-#include "SFML/Window.hpp"
-
-#include <iostream>
+#include "../Header/StateController.h"
 
 const int MmapHeight = 1024;
 int MmapWidth = 1920;

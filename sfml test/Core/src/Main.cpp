@@ -3,6 +3,8 @@
 int main()
 {
     sf::RenderWindow window(sf::VideoMode(MmapWidth, MmapHeight), "Testing Box");
+
+    StateController StateCon(window);
    
 
     sf::Vector2i mousePosition;
