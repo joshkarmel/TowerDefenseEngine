@@ -1,2 +1,15 @@
 *.mdf
-*.ldf 
+*.ldf
+*.config
+*.db
+*.db-shm
+*.db-wal
+*.VC.db
+*.opendb
+*.ipch
+*.VC.db
+Debug\
+*.lock
+*.vsidx
+*.db
+.vs/EngineTest/v17/Browse.VC.db
