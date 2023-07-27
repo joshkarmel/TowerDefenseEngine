@@ -1,2 +1,4 @@
-﻿  StateController.cpp
+﻿  Main.cpp
+  StateController.cpp
+  Generating Code...
   sfml test.vcxproj -> C:\Users\mattb\Documents\GitHub\TowerDefenseEngine\Debug\sfml test.exe

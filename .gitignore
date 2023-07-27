@@ -7,3 +7,4 @@
 *.opendb
 *.ipch
 *.VC.db
+Debug/

@@ -7,6 +7,8 @@
 
 #include <iostream>
 
+using namespace sf;
+
 class StateController
 {
 public:
@@ -18,14 +20,22 @@ public:
 	};
 
 
-	StateController(sf::RenderWindow& pWindowRef);
+	StateController(RenderWindow& pWindowRef);
 	~StateController();
+
+	void update(Vector2i& pMousePosition);
+	void updateMainMenu();
+	void updateTowerMenu();
+	void updateTower();
+	
+	void changeState(eState pStateChange);
 
 private:
 
 
-	sf::RenderWindow& windowRef;
+	RenderWindow& windowRef;
 
 	eState currentState;
+	Vector2i mousePositionRef;
 };
 

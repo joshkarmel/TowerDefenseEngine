@@ -2,9 +2,12 @@
 
 #include "../Header/StateController.h"
 
+using namespace sf;
+
 const int MmapHeight = 1024;
 int MmapWidth = 1920;
 
-sf::Clock DeltaClock;
+Clock DeltaClock;
+float deltaTime;
 
 
