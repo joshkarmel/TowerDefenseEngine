@@ -29,6 +29,7 @@ public:
 	void updateTower();
 	
 	void changeState(eState pStateChange);
+	eState getState();
 
 private:
 

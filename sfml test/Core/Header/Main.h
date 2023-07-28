@@ -1,7 +1,7 @@
 #pragma once
 
-#include "../Header/StateController.h"
 #include "../Header/GuiController.h"
+#include "../Header/GFXController.h"
 
 using namespace sf;
 

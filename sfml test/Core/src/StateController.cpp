@@ -7,7 +7,7 @@ StateController::StateController(sf::RenderWindow& pWindowRef)
 	currentState(MAIN)
 {
 
-	std::cout << "statecon";
+	std::cout << "statecon" << std::endl;;
 }
 
 StateController::~StateController()
@@ -43,13 +43,20 @@ void StateController::updateMainMenu()
 
 void StateController::updateTowerMenu()
 {
+	
 }
 
 void StateController::updateTower()
 {
+	//std::cout << "TOWER" << std::endl;
 }
 
 void StateController::changeState(eState pStateChange)
 {
 	currentState = pStateChange;
+}
+
+StateController::eState StateController::getState()
+{
+	return currentState;
 }
