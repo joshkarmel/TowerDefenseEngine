@@ -5,12 +5,17 @@
 #include "SFML/Window.hpp"
 
 #include <iostream>
+#include <string>
 
 class GFXController
 {
 public:
 	GFXController(sf::RenderWindow& pWindowRef);
 	~GFXController();
+
+	void debugAtlasLoad();
+
+	void loadAtlas(std::string pFilepath);
 
 private:
 	sf::Texture textureAtlas;
