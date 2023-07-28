@@ -169,12 +169,14 @@
     <ClCompile Include="..\include\noise\noiseutils.cpp" />
     <ClCompile Include="Core\src\Main.cpp" />
     <ClCompile Include="Core\src\StateController.cpp" />
+    <ClCompile Include="Core\src\GuiController.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\include\noise\noiseutils.h" />
     <ClInclude Include="Core\Header\Auxillary.h" />
     <ClInclude Include="Core\Header\Main.h" />
     <ClInclude Include="Core\Header\StateController.h" />
+    <ClInclude Include="Core\Header\GuiController.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
