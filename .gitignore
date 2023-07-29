@@ -17,4 +17,4 @@
 sfml test\Debug\*
 Debug\*
 Release\*
-sfml test\*
+sfml test\Release\*
