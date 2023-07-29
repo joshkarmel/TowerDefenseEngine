@@ -4,10 +4,12 @@
 #include "SFML/Main.hpp"
 #include "SFML/System.hpp"
 #include "SFML/Window.hpp"
+#include "./Models/Entity.cpp";
 
 #include <iostream>
+#include <list>
 
-using namespace sf;
+using namespace std;
 
 class EntityController
 {
@@ -15,15 +17,13 @@ public:
 	EntityController(RenderWindow& pWindowRef);
 	~EntityController();
 
-	void updatePosition(Vector2i newPos);
-
-	Vector2i getPosition();
+	list<Entity> addEntity(Entity newEnt);
+	list<Entity> setEntities(list<Entity> newEnts);
+	Entity getEntity();
 
 private:
 	RenderWindow& windowRef;
 
-	Vector2i entPosition;
-
-	
+	list<Entity> entities;
 };
 

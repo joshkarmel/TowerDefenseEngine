@@ -1,6 +1,9 @@
 #include "../Header/EntityController.h"
+#include "./Models/Entity.cpp";
 
-EntityController::EntityController(sf::RenderWindow& pWindowRef)
+using namespace sf;
+
+EntityController::EntityController(RenderWindow& pWindowRef)
 	:
 	windowRef(pWindowRef)
 {
@@ -11,7 +14,17 @@ EntityController::~EntityController()
 {
 }
 
-Vector2i EntityController::getPosition()
+list<Entity> EntityController::addEntity(Entity newEnt) {
+	entities.push_back(newEnt);
+	return entities;
+}
+
+list<Entity> EntityController::setEntities(list<Entity> newEnts) {
+	entities = newEnts;
+	return entities;
+}
+
+Entity EntityController::getEntity()
 {
-	return entPosition;
+	return entities.front();
 }
