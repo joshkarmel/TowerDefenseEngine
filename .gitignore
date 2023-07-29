@@ -15,3 +15,6 @@
 *.idb
 *.vcxproj
 sfml test\Debug\*
+Debug\*
+Release\*
+sfml test\*
