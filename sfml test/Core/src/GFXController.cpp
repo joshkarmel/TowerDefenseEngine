@@ -1,8 +1,9 @@
 #include "../Header/GFXController.h"
 
-GFXController::GFXController(sf::RenderWindow& pWindowRef)
+GFXController::GFXController(sf::RenderWindow& pWindowRef, EntityController& pEntityConRef)
 	:
-	windowRef(pWindowRef)
+	windowRef(pWindowRef),
+	EntityConRef(pEntityConRef)
 {
 	std::cout << "GFXCon" << std::endl;
 
@@ -27,4 +28,20 @@ void GFXController::loadAtlas(std::string pFilepath)
 		std::cout << "Texture size is 0, 0" << std::endl;
 	}
 	BGtextureAtlas = tempTexture;
+}
+
+void GFXController::renderEntity()
+{
+	for (auto& entity : entitySpriteStack) 
+	{
+		//entity->update(deltaTime);
+		//get entitytype
+		//use that to reference prper gfx
+		//update image
+	}
+}
+
+void GFXController::update()
+{
+	
 }

@@ -2,6 +2,7 @@
 
 #include "../Header/GuiController.h"
 #include "../Header/GFXController.h"
+//#include "../Header/EntityController.h"
 
 using namespace sf;
 

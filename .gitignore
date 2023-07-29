@@ -18,3 +18,5 @@ sfml test\Debug\*
 Debug\*
 Release\*
 sfml test\Release\*
+*.exe
+*.obj

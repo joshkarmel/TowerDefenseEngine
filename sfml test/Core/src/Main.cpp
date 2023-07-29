@@ -5,9 +5,9 @@ int main()
     RenderWindow window(VideoMode(MmapWidth, MmapHeight), "Testing Box");
 
     StateController StateCon(window);
-   // GuiController GuiCon(window,StateCon );
+    EntityController EntityCon(window);
     GuiController GuiCon(window, StateCon);
-    GFXController GFXCon(window);
+    GFXController GFXCon(window, EntityCon);
    
 
     Vector2i mousePosition;
@@ -33,9 +33,9 @@ int main()
 
         //DRAW
         
-
+       
         DeltaClock.restart();
-        
+        GFXCon.renderEntity();
         GuiCon.renderFrame(DeltaClock);
 
         window.display();

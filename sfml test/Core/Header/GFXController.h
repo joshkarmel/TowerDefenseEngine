@@ -1,5 +1,5 @@
 #pragma once
-//#include "../Header/EntityController.h"
+#include "../Header/EntityController.h"
 
 #include "SFML/Graphics.hpp"
 #include "SFML/Main.hpp"
@@ -13,18 +13,21 @@
 class GFXController
 {
 public:
-	GFXController(sf::RenderWindow& pWindowRef);
+	GFXController(sf::RenderWindow& pWindowRef, EntityController& pEntityConRef);
 	~GFXController();
 
 	void loadAtlas(std::string pFilepath);
 
 	void renderEntity();
+	void update();
 
 private:
 	sf::Texture BGtextureAtlas;
 	sf::Texture characterAtlas;
 	sf::RenderWindow& windowRef;
 
-	//std::vector<Entity> entityStack;
+	std::vector<sf::Sprite> entitySpriteStack;
+
+	EntityController& EntityConRef;
 };
 
