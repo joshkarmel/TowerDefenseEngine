@@ -20,7 +20,7 @@ public:
 	};
 
 
-	StateController(RenderWindow& pWindowRef);
+	StateController(sf::RenderWindow& pWindowRef);
 	~StateController();
 
 	void update(Vector2i& pMousePosition);
@@ -33,9 +33,7 @@ public:
 
 private:
 
-
 	RenderWindow& windowRef;
-
 	eState currentState;
 	Vector2i mousePositionRef;
 };

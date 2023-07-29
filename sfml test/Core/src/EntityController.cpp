@@ -1,5 +1,4 @@
 #include "../Header/EntityController.h"
-#include "../Header/Models/Entity.h";
 
 using namespace sf;
 

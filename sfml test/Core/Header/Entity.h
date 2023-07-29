@@ -6,6 +6,7 @@
 #include "SFML/Window.hpp"
 
 #include <iostream>
+#include <string>
 
 using namespace sf;
 
@@ -13,7 +14,7 @@ class Entity
 {
 public:
 	Entity(int Id, Vector2i pos);
-	~Entity();
+	//~Entity();
 
 	Vector2i getPosition();
 	Vector2i setPosition(Vector2i newPos);
@@ -22,5 +23,7 @@ public:
 
 private:
 	Vector2i position;
+	std::string tilesetPath;
+	int speed;
 };
 

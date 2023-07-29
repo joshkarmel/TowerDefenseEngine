@@ -1,11 +1,7 @@
 #pragma once
 
-#include "SFML/Graphics.hpp"
-#include "SFML/Main.hpp"
-#include "SFML/System.hpp"
-#include "SFML/Window.hpp"
-#include "./Models/Entity.h";
 
+#include "../Header/Entity.h"
 #include <iostream>
 #include <list>
 

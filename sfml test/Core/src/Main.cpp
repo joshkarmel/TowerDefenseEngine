@@ -5,7 +5,8 @@ int main()
     RenderWindow window(VideoMode(MmapWidth, MmapHeight), "Testing Box");
 
     StateController StateCon(window);
-    GuiController GuiCon(window,StateCon);
+   // GuiController GuiCon(window,StateCon );
+    GuiController GuiCon(window, StateCon);
     GFXController GFXCon(window);
    
 

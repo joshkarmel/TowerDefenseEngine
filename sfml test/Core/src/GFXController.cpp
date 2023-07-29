@@ -14,20 +14,6 @@ GFXController::~GFXController()
 
 }
 
-void GFXController::debugAtlasLoad()
-{
-	sf::Texture tempTexture;
-	if (!tempTexture.loadFromFile("Resources/Image/Tilemap/Test1.png"))
-	{
-		std::cout << "error loaduing textire" << std::endl;
-	}
-
-	if (tempTexture.getSize() == sf::Vector2u(0, 0))
-	{
-		std::cout << "Texture size is 0, 0" << std::endl;
-	}
-}
-
 void GFXController::loadAtlas(std::string pFilepath)
 {
 	sf::Texture tempTexture;
@@ -40,5 +26,5 @@ void GFXController::loadAtlas(std::string pFilepath)
 	{
 		std::cout << "Texture size is 0, 0" << std::endl;
 	}
-	textureAtlas = tempTexture;
+	BGtextureAtlas = tempTexture;
 }
