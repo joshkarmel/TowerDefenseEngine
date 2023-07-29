@@ -4,7 +4,7 @@
 #include "SFML/Main.hpp"
 #include "SFML/System.hpp"
 #include "SFML/Window.hpp"
-#include "./Models/Entity.cpp";
+#include "./Models/Entity.h";
 
 #include <iostream>
 #include <list>
